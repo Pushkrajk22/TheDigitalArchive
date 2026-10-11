@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.prose-content p {
+  margin-bottom: 2rem;
+  white-space: pre-line;
+}
+
+.prose-content p:empty {
+  margin-bottom: 1rem;
+  min-height: 1em;
+}
+
